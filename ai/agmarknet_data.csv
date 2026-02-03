@@ -1,0 +1,11 @@
+Date,State,District,Market,Commodity,Variety,Min_Price,Max_Price,Modal_Price
+2025-01-01,Punjab,Ludhiana,Khanna,Wheat,Dara,2100,2250,2200
+2025-01-01,Haryana,Karnal,Karnal,Rice,Basmati,3500,4200,3900
+2025-01-02,Maharashtra,Nashik,Lasalgaon,Onion,Red,1200,1800,1500
+2025-01-02,Punjab,Ludhiana,Khanna,Wheat,Dara,2150,2300,2210
+2025-01-02,Haryana,Karnal,Karnal,Rice,Basmati,3450,4100,3850
+2025-01-03,Maharashtra,Nashik,Lasalgaon,Onion,Red,1300,1950,1600
+2025-01-03,Uttar Pradesh,Agra,Agra,Potato,Desi,600,800,700
+2025-01-04,Madhya Pradesh,Indore,Indore,Soyabean,Yellow,4500,4800,4650
+2025-01-04,Punjab,Ludhiana,Khanna,Wheat,Dara,2120,2240,2190
+2025-01-05,Maharashtra,Nashik,Lasalgaon,Onion,Red,1400,2100,1800
