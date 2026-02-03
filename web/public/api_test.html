@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Connectivity Test</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #111; color: #eee; }
+        button { padding: 10px 20px; background: #22c55e; border: none; color: white; cursor: pointer; }
+        #status { margin-top: 20px; padding: 10px; border: 1px solid #333; }
+        .success { color: #4ade80; }
+        .error { color: #f87171; }
+    </style>
+</head>
+<body>
+    <h2>AgriPulse Backend Test</h2>
+    <p>Click below to test connection to <b>http://127.0.0.1:8000/check_fair_price</b></p>
+    <button onclick="testApi()">Test Connection</button>
+    <div id="status">Waiting...</div>
+
+    <script>
+        async function testApi() {
+            const statusDiv = document.getElementById('status');
+            statusDiv.innerHTML = "Connecting...";
+            statusDiv.className = "";
+
+            try {
+                const res = await fetch('http://127.0.0.1:8000/check_fair_price', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        "commodity": "Wheat",
+                        "bid_amount": 2200
+                    })
+                });
+                
+                if (res.ok) {
+                    const data = await res.json();
+                    statusDiv.innerHTML = "SUCCESS! Server replied:<br><pre>" + JSON.stringify(data, null, 2) + "</pre>";
+                    statusDiv.className = "success";
+                } else {
+                    statusDiv.innerHTML = "ERROR: Server reached but returned " + res.status;
+                    statusDiv.className = "error";
+                }
+            } catch (e) {
+                statusDiv.innerHTML = "FAILURE: Could not reach server. <br>" + e;
+                statusDiv.className = "error";
+            }
+        }
+    </script>
+</body>
+</html>
