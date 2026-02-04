@@ -2,6 +2,21 @@
 
 **ProcureChain** is a decentralized, transparent, and role-based procurement ecosystem designed for Government-to-Farmer (G2F) and B2B agricultural trade. It solves critical issues in traditional supply chains—bid rigging, delayed payments, and lack of transparency—by leveraging **Ethereum/Polygon Blockchain**, **AI-driven Price Discovery**, and **IoT Weight Verification**.
 
+# 📺 Demo Video
+**[Watch the 2-Minute Walkthrough Here](https://drive.google.com/file/d/1dVGpobOMTF545e4lsSnN9SyI8NUtyCuZ/view?usp=drive_link)**
+
+---
+
+## 🌾 Why ProcureChain? (The Farmer's Reality)
+
+For decades, Indian farmers have been the backbone of our economy, yet they suffer the most.
+*   **The Problem:** Small farmers are often forced to sell their produce at **rock-bottom prices** to middlemen (Arhatiyas) because they lack access to direct government tenders.
+*   **The Exploitation:** Opaque bidding processes mean farmers never know the true market value. "Sealed bids" are often leaked to favored vendors, leading to cartelization.
+*   **Our Solution:** ProcureChain removes the dark curtain.
+    1.  **Direct Access**: Farmers can sell directly using Voice Commands (No complex apps).
+    2.  **No More leaks**: Bids are **Encrypted on Blockchain**. Not even the Government Officer can see them until the deadline.
+    3.  **Highest Price Wins**: Our "Smart Validator" ensures the **H1 (Highest Bidder)** automatically wins. No favoritism. No corruption.
+
 ---
 
 ## 🚀 Key Features
@@ -105,7 +120,8 @@ npm run dev
 
 3.  **Officer Approves**:
     -   Officer views the "Pending" list.
-    -   **Smart Validator** engine runs: Checks Deadline 🕒, L1 Logic 📉, and Quality 🏅.
+    -   **Decrypts Bids**: After the deadline, the Officer decrypts the sealed bids to reveal prices.
+    -   **Smart Validator** engine runs: Checks Deadline 🕒, H1 Logic (Highest Price Wins) �, and Quality 🏅.
     -   Officer attaches **Digital Signature** to release the Work Order.
 
 4.  **Payment & Audit**:
